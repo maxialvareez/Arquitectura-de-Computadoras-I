@@ -1,0 +1,13 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sources_1/imports/sources_1/new/Registers.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Registers
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sources_1/imports/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/ControlUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ControlUnit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/Multicycle_MIPS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Multicycle_MIPS
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LabIII-VDI4/Desktop/Arqui1Entrega/Arqui1Entrega.srcs/sim_1/imports/sim_1/imports/Material_Lab2/Multicycle_MIPS_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MultiCycle_MIPS_tb

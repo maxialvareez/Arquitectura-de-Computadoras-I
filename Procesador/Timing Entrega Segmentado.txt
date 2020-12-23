@@ -1,0 +1,1934 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.1 (win64) Build 881834 Fri Apr  4 14:15:54 MDT 2014
+| Date         : Sun Jun 09 17:42:08 2019
+| Host         : DESKTOP-ET7SL7P running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1 -file {D:/Facultad/Arqui 1/Arqui Entrega Lab/Arqui1Entrega/Segmentado/Timing Entrega Segmentado.txt}
+| Design       : Pipelined_MIPS
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.10 2014-03-13
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking unexpandable_clocks
+13. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 393 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
+
+EXE_AluOp_reg[0]/C
+EXE_AluOp_reg[1]/C
+EXE_AluSrc_reg/C
+EXE_Branch_reg/C
+EXE_MemRead_reg/C
+EXE_MemWrite_reg/C
+EXE_PcNext_reg[10]/C
+EXE_PcNext_reg[11]/C
+EXE_PcNext_reg[12]/C
+EXE_PcNext_reg[13]/C
+EXE_PcNext_reg[14]/C
+EXE_PcNext_reg[15]/C
+EXE_PcNext_reg[16]/C
+EXE_PcNext_reg[17]/C
+EXE_PcNext_reg[18]/C
+EXE_PcNext_reg[19]/C
+EXE_PcNext_reg[1]/C
+EXE_PcNext_reg[20]/C
+EXE_PcNext_reg[21]/C
+EXE_PcNext_reg[22]/C
+EXE_PcNext_reg[23]/C
+EXE_PcNext_reg[24]/C
+EXE_PcNext_reg[25]/C
+EXE_PcNext_reg[26]/C
+EXE_PcNext_reg[27]/C
+EXE_PcNext_reg[28]/C
+EXE_PcNext_reg[29]/C
+EXE_PcNext_reg[2]/C
+EXE_PcNext_reg[30]/C
+EXE_PcNext_reg[31]/C
+EXE_PcNext_reg[3]/C
+EXE_PcNext_reg[4]/C
+EXE_PcNext_reg[5]/C
+EXE_PcNext_reg[6]/C
+EXE_PcNext_reg[7]/C
+EXE_PcNext_reg[8]/C
+EXE_PcNext_reg[9]/C
+EXE_RegRd1_reg[0]/C
+EXE_RegRd1_reg[10]/C
+EXE_RegRd1_reg[11]/C
+EXE_RegRd1_reg[12]/C
+EXE_RegRd1_reg[13]/C
+EXE_RegRd1_reg[14]/C
+EXE_RegRd1_reg[15]/C
+EXE_RegRd1_reg[16]/C
+EXE_RegRd1_reg[17]/C
+EXE_RegRd1_reg[18]/C
+EXE_RegRd1_reg[19]/C
+EXE_RegRd1_reg[1]/C
+EXE_RegRd1_reg[20]/C
+EXE_RegRd1_reg[21]/C
+EXE_RegRd1_reg[22]/C
+EXE_RegRd1_reg[23]/C
+EXE_RegRd1_reg[24]/C
+EXE_RegRd1_reg[25]/C
+EXE_RegRd1_reg[26]/C
+EXE_RegRd1_reg[27]/C
+EXE_RegRd1_reg[28]/C
+EXE_RegRd1_reg[29]/C
+EXE_RegRd1_reg[2]/C
+EXE_RegRd1_reg[30]/C
+EXE_RegRd1_reg[31]/C
+EXE_RegRd1_reg[3]/C
+EXE_RegRd1_reg[4]/C
+EXE_RegRd1_reg[5]/C
+EXE_RegRd1_reg[6]/C
+EXE_RegRd1_reg[7]/C
+EXE_RegRd1_reg[8]/C
+EXE_RegRd1_reg[9]/C
+EXE_RegRd2_reg[0]/C
+EXE_RegRd2_reg[10]/C
+EXE_RegRd2_reg[11]/C
+EXE_RegRd2_reg[12]/C
+EXE_RegRd2_reg[13]/C
+EXE_RegRd2_reg[14]/C
+EXE_RegRd2_reg[15]/C
+EXE_RegRd2_reg[16]/C
+EXE_RegRd2_reg[17]/C
+EXE_RegRd2_reg[18]/C
+EXE_RegRd2_reg[19]/C
+EXE_RegRd2_reg[1]/C
+EXE_RegRd2_reg[20]/C
+EXE_RegRd2_reg[21]/C
+EXE_RegRd2_reg[22]/C
+EXE_RegRd2_reg[23]/C
+EXE_RegRd2_reg[24]/C
+EXE_RegRd2_reg[25]/C
+EXE_RegRd2_reg[26]/C
+EXE_RegRd2_reg[27]/C
+EXE_RegRd2_reg[28]/C
+EXE_RegRd2_reg[29]/C
+EXE_RegRd2_reg[2]/C
+EXE_RegRd2_reg[30]/C
+EXE_RegRd2_reg[31]/C
+EXE_RegRd2_reg[3]/C
+EXE_RegRd2_reg[4]/C
+EXE_RegRd2_reg[5]/C
+EXE_RegRd2_reg[6]/C
+EXE_RegRd2_reg[7]/C
+EXE_RegRd2_reg[8]/C
+EXE_RegRd2_reg[9]/C
+EXE_RegWrite_reg/C
+EXE_Rt_reg[0]/C
+EXE_Rt_reg[1]/C
+EXE_Rt_reg[2]/C
+EXE_Rt_reg[3]/C
+EXE_Rt_reg[4]/C
+EXE_SignExt_reg[0]/C
+EXE_SignExt_reg[10]/C
+EXE_SignExt_reg[11]/C
+EXE_SignExt_reg[12]/C
+EXE_SignExt_reg[13]/C
+EXE_SignExt_reg[14]/C
+EXE_SignExt_reg[1]/C
+EXE_SignExt_reg[29]/C
+EXE_SignExt_reg[2]/C
+EXE_SignExt_reg[3]/C
+EXE_SignExt_reg[4]/C
+EXE_SignExt_reg[5]/C
+EXE_SignExt_reg[6]/C
+EXE_SignExt_reg[7]/C
+EXE_SignExt_reg[8]/C
+EXE_SignExt_reg[9]/C
+ID_Instruction_reg[0]/C
+ID_Instruction_reg[10]/C
+ID_Instruction_reg[11]/C
+ID_Instruction_reg[12]/C
+ID_Instruction_reg[13]/C
+ID_Instruction_reg[14]/C
+ID_Instruction_reg[15]/C
+ID_Instruction_reg[16]/C
+ID_Instruction_reg[17]/C
+ID_Instruction_reg[18]/C
+ID_Instruction_reg[19]/C
+ID_Instruction_reg[1]/C
+ID_Instruction_reg[20]/C
+ID_Instruction_reg[21]/C
+ID_Instruction_reg[22]/C
+ID_Instruction_reg[23]/C
+ID_Instruction_reg[24]/C
+ID_Instruction_reg[25]/C
+ID_Instruction_reg[26]/C
+ID_Instruction_reg[27]/C
+ID_Instruction_reg[28]/C
+ID_Instruction_reg[29]/C
+ID_Instruction_reg[2]/C
+ID_Instruction_reg[30]/C
+ID_Instruction_reg[31]/C
+ID_Instruction_reg[3]/C
+ID_Instruction_reg[4]/C
+ID_Instruction_reg[5]/C
+ID_Instruction_reg[6]/C
+ID_Instruction_reg[7]/C
+ID_Instruction_reg[8]/C
+ID_Instruction_reg[9]/C
+ID_PcNext_reg[10]/C
+ID_PcNext_reg[11]/C
+ID_PcNext_reg[12]/C
+ID_PcNext_reg[13]/C
+ID_PcNext_reg[14]/C
+ID_PcNext_reg[15]/C
+ID_PcNext_reg[16]/C
+ID_PcNext_reg[17]/C
+ID_PcNext_reg[18]/C
+ID_PcNext_reg[19]/C
+ID_PcNext_reg[1]/C
+ID_PcNext_reg[20]/C
+ID_PcNext_reg[21]/C
+ID_PcNext_reg[22]/C
+ID_PcNext_reg[23]/C
+ID_PcNext_reg[24]/C
+ID_PcNext_reg[25]/C
+ID_PcNext_reg[26]/C
+ID_PcNext_reg[27]/C
+ID_PcNext_reg[28]/C
+ID_PcNext_reg[29]/C
+ID_PcNext_reg[2]/C
+ID_PcNext_reg[30]/C
+ID_PcNext_reg[31]/C
+ID_PcNext_reg[3]/C
+ID_PcNext_reg[4]/C
+ID_PcNext_reg[5]/C
+ID_PcNext_reg[6]/C
+ID_PcNext_reg[7]/C
+ID_PcNext_reg[8]/C
+ID_PcNext_reg[9]/C
+IF_PcOut_reg[10]/C
+IF_PcOut_reg[11]/C
+IF_PcOut_reg[12]/C
+IF_PcOut_reg[13]/C
+IF_PcOut_reg[14]/C
+IF_PcOut_reg[15]/C
+IF_PcOut_reg[16]/C
+IF_PcOut_reg[17]/C
+IF_PcOut_reg[18]/C
+IF_PcOut_reg[19]/C
+IF_PcOut_reg[1]/C
+IF_PcOut_reg[20]/C
+IF_PcOut_reg[21]/C
+IF_PcOut_reg[22]/C
+IF_PcOut_reg[23]/C
+IF_PcOut_reg[24]/C
+IF_PcOut_reg[25]/C
+IF_PcOut_reg[26]/C
+IF_PcOut_reg[27]/C
+IF_PcOut_reg[28]/C
+IF_PcOut_reg[29]/C
+IF_PcOut_reg[2]/C
+IF_PcOut_reg[30]/C
+IF_PcOut_reg[31]/C
+IF_PcOut_reg[3]/C
+IF_PcOut_reg[4]/C
+IF_PcOut_reg[5]/C
+IF_PcOut_reg[6]/C
+IF_PcOut_reg[7]/C
+IF_PcOut_reg[8]/C
+IF_PcOut_reg[9]/C
+MEM_AluResult_reg[0]/C
+MEM_AluResult_reg[10]/C
+MEM_AluResult_reg[11]/C
+MEM_AluResult_reg[12]/C
+MEM_AluResult_reg[13]/C
+MEM_AluResult_reg[14]/C
+MEM_AluResult_reg[15]/C
+MEM_AluResult_reg[16]/C
+MEM_AluResult_reg[17]/C
+MEM_AluResult_reg[18]/C
+MEM_AluResult_reg[19]/C
+MEM_AluResult_reg[1]/C
+MEM_AluResult_reg[20]/C
+MEM_AluResult_reg[21]/C
+MEM_AluResult_reg[22]/C
+MEM_AluResult_reg[23]/C
+MEM_AluResult_reg[24]/C
+MEM_AluResult_reg[25]/C
+MEM_AluResult_reg[26]/C
+MEM_AluResult_reg[27]/C
+MEM_AluResult_reg[28]/C
+MEM_AluResult_reg[29]/C
+MEM_AluResult_reg[2]/C
+MEM_AluResult_reg[30]/C
+MEM_AluResult_reg[31]/C
+MEM_AluResult_reg[3]/C
+MEM_AluResult_reg[4]/C
+MEM_AluResult_reg[5]/C
+MEM_AluResult_reg[6]/C
+MEM_AluResult_reg[7]/C
+MEM_AluResult_reg[8]/C
+MEM_AluResult_reg[9]/C
+MEM_BranchAddress_reg[10]/C
+MEM_BranchAddress_reg[11]/C
+MEM_BranchAddress_reg[12]/C
+MEM_BranchAddress_reg[13]/C
+MEM_BranchAddress_reg[14]/C
+MEM_BranchAddress_reg[15]/C
+MEM_BranchAddress_reg[16]/C
+MEM_BranchAddress_reg[17]/C
+MEM_BranchAddress_reg[18]/C
+MEM_BranchAddress_reg[19]/C
+MEM_BranchAddress_reg[1]/C
+MEM_BranchAddress_reg[20]/C
+MEM_BranchAddress_reg[21]/C
+MEM_BranchAddress_reg[22]/C
+MEM_BranchAddress_reg[23]/C
+MEM_BranchAddress_reg[24]/C
+MEM_BranchAddress_reg[25]/C
+MEM_BranchAddress_reg[26]/C
+MEM_BranchAddress_reg[27]/C
+MEM_BranchAddress_reg[28]/C
+MEM_BranchAddress_reg[29]/C
+MEM_BranchAddress_reg[2]/C
+MEM_BranchAddress_reg[30]/C
+MEM_BranchAddress_reg[31]/C
+MEM_BranchAddress_reg[3]/C
+MEM_BranchAddress_reg[4]/C
+MEM_BranchAddress_reg[5]/C
+MEM_BranchAddress_reg[6]/C
+MEM_BranchAddress_reg[7]/C
+MEM_BranchAddress_reg[8]/C
+MEM_BranchAddress_reg[9]/C
+MEM_Branch_reg/C
+MEM_MemRead_reg/C
+MEM_MemWrite_reg/C
+MEM_RegDest_reg[0]/C
+MEM_RegDest_reg[1]/C
+MEM_RegDest_reg[2]/C
+MEM_RegDest_reg[3]/C
+MEM_RegDest_reg[4]/C
+MEM_RegRd2_reg[0]/C
+MEM_RegRd2_reg[10]/C
+MEM_RegRd2_reg[11]/C
+MEM_RegRd2_reg[12]/C
+MEM_RegRd2_reg[13]/C
+MEM_RegRd2_reg[14]/C
+MEM_RegRd2_reg[15]/C
+MEM_RegRd2_reg[16]/C
+MEM_RegRd2_reg[17]/C
+MEM_RegRd2_reg[18]/C
+MEM_RegRd2_reg[19]/C
+MEM_RegRd2_reg[1]/C
+MEM_RegRd2_reg[20]/C
+MEM_RegRd2_reg[21]/C
+MEM_RegRd2_reg[22]/C
+MEM_RegRd2_reg[23]/C
+MEM_RegRd2_reg[24]/C
+MEM_RegRd2_reg[25]/C
+MEM_RegRd2_reg[26]/C
+MEM_RegRd2_reg[27]/C
+MEM_RegRd2_reg[28]/C
+MEM_RegRd2_reg[29]/C
+MEM_RegRd2_reg[2]/C
+MEM_RegRd2_reg[30]/C
+MEM_RegRd2_reg[31]/C
+MEM_RegRd2_reg[3]/C
+MEM_RegRd2_reg[4]/C
+MEM_RegRd2_reg[5]/C
+MEM_RegRd2_reg[6]/C
+MEM_RegRd2_reg[7]/C
+MEM_RegRd2_reg[8]/C
+MEM_RegRd2_reg[9]/C
+MEM_RegWrite_reg/C
+MEM_Zero_reg/C
+WB_Address_reg[0]/C
+WB_Address_reg[10]/C
+WB_Address_reg[11]/C
+WB_Address_reg[12]/C
+WB_Address_reg[13]/C
+WB_Address_reg[14]/C
+WB_Address_reg[15]/C
+WB_Address_reg[16]/C
+WB_Address_reg[17]/C
+WB_Address_reg[18]/C
+WB_Address_reg[19]/C
+WB_Address_reg[1]/C
+WB_Address_reg[20]/C
+WB_Address_reg[21]/C
+WB_Address_reg[22]/C
+WB_Address_reg[23]/C
+WB_Address_reg[24]/C
+WB_Address_reg[25]/C
+WB_Address_reg[26]/C
+WB_Address_reg[27]/C
+WB_Address_reg[28]/C
+WB_Address_reg[29]/C
+WB_Address_reg[2]/C
+WB_Address_reg[30]/C
+WB_Address_reg[31]/C
+WB_Address_reg[3]/C
+WB_Address_reg[4]/C
+WB_Address_reg[5]/C
+WB_Address_reg[6]/C
+WB_Address_reg[7]/C
+WB_Address_reg[8]/C
+WB_Address_reg[9]/C
+WB_MemToReg_reg/C
+WB_ReadData_reg[0]/C
+WB_ReadData_reg[10]/C
+WB_ReadData_reg[11]/C
+WB_ReadData_reg[12]/C
+WB_ReadData_reg[13]/C
+WB_ReadData_reg[14]/C
+WB_ReadData_reg[15]/C
+WB_ReadData_reg[16]/C
+WB_ReadData_reg[17]/C
+WB_ReadData_reg[18]/C
+WB_ReadData_reg[19]/C
+WB_ReadData_reg[1]/C
+WB_ReadData_reg[20]/C
+WB_ReadData_reg[21]/C
+WB_ReadData_reg[22]/C
+WB_ReadData_reg[23]/C
+WB_ReadData_reg[24]/C
+WB_ReadData_reg[25]/C
+WB_ReadData_reg[26]/C
+WB_ReadData_reg[27]/C
+WB_ReadData_reg[28]/C
+WB_ReadData_reg[29]/C
+WB_ReadData_reg[2]/C
+WB_ReadData_reg[30]/C
+WB_ReadData_reg[31]/C
+WB_ReadData_reg[3]/C
+WB_ReadData_reg[4]/C
+WB_ReadData_reg[5]/C
+WB_ReadData_reg[6]/C
+WB_ReadData_reg[7]/C
+WB_ReadData_reg[8]/C
+WB_ReadData_reg[9]/C
+WB_RegDest_reg[0]/C
+WB_RegDest_reg[1]/C
+WB_RegDest_reg[2]/C
+WB_RegDest_reg[3]/C
+WB_RegDest_reg[4]/C
+WB_RegWrite_reg/C
+
+
+2. checking constant clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 786 pins that are not constrained for maximum delay. (HIGH)
+
+EXE_AluOp_reg[0]/CLR
+EXE_AluOp_reg[0]/D
+EXE_AluOp_reg[1]/CLR
+EXE_AluOp_reg[1]/D
+EXE_AluSrc_reg/CLR
+EXE_AluSrc_reg/D
+EXE_Branch_reg/CLR
+EXE_Branch_reg/D
+EXE_MemRead_reg/CLR
+EXE_MemRead_reg/D
+EXE_MemWrite_reg/CLR
+EXE_MemWrite_reg/D
+EXE_PcNext_reg[10]/CLR
+EXE_PcNext_reg[10]/D
+EXE_PcNext_reg[11]/CLR
+EXE_PcNext_reg[11]/D
+EXE_PcNext_reg[12]/CLR
+EXE_PcNext_reg[12]/D
+EXE_PcNext_reg[13]/CLR
+EXE_PcNext_reg[13]/D
+EXE_PcNext_reg[14]/CLR
+EXE_PcNext_reg[14]/D
+EXE_PcNext_reg[15]/CLR
+EXE_PcNext_reg[15]/D
+EXE_PcNext_reg[16]/CLR
+EXE_PcNext_reg[16]/D
+EXE_PcNext_reg[17]/CLR
+EXE_PcNext_reg[17]/D
+EXE_PcNext_reg[18]/CLR
+EXE_PcNext_reg[18]/D
+EXE_PcNext_reg[19]/CLR
+EXE_PcNext_reg[19]/D
+EXE_PcNext_reg[1]/CLR
+EXE_PcNext_reg[1]/D
+EXE_PcNext_reg[20]/CLR
+EXE_PcNext_reg[20]/D
+EXE_PcNext_reg[21]/CLR
+EXE_PcNext_reg[21]/D
+EXE_PcNext_reg[22]/CLR
+EXE_PcNext_reg[22]/D
+EXE_PcNext_reg[23]/CLR
+EXE_PcNext_reg[23]/D
+EXE_PcNext_reg[24]/CLR
+EXE_PcNext_reg[24]/D
+EXE_PcNext_reg[25]/CLR
+EXE_PcNext_reg[25]/D
+EXE_PcNext_reg[26]/CLR
+EXE_PcNext_reg[26]/D
+EXE_PcNext_reg[27]/CLR
+EXE_PcNext_reg[27]/D
+EXE_PcNext_reg[28]/CLR
+EXE_PcNext_reg[28]/D
+EXE_PcNext_reg[29]/CLR
+EXE_PcNext_reg[29]/D
+EXE_PcNext_reg[2]/CLR
+EXE_PcNext_reg[2]/D
+EXE_PcNext_reg[30]/CLR
+EXE_PcNext_reg[30]/D
+EXE_PcNext_reg[31]/CLR
+EXE_PcNext_reg[31]/D
+EXE_PcNext_reg[3]/CLR
+EXE_PcNext_reg[3]/D
+EXE_PcNext_reg[4]/CLR
+EXE_PcNext_reg[4]/D
+EXE_PcNext_reg[5]/CLR
+EXE_PcNext_reg[5]/D
+EXE_PcNext_reg[6]/CLR
+EXE_PcNext_reg[6]/D
+EXE_PcNext_reg[7]/CLR
+EXE_PcNext_reg[7]/D
+EXE_PcNext_reg[8]/CLR
+EXE_PcNext_reg[8]/D
+EXE_PcNext_reg[9]/CLR
+EXE_PcNext_reg[9]/D
+EXE_RegRd1_reg[0]/CLR
+EXE_RegRd1_reg[0]/D
+EXE_RegRd1_reg[10]/CLR
+EXE_RegRd1_reg[10]/D
+EXE_RegRd1_reg[11]/CLR
+EXE_RegRd1_reg[11]/D
+EXE_RegRd1_reg[12]/CLR
+EXE_RegRd1_reg[12]/D
+EXE_RegRd1_reg[13]/CLR
+EXE_RegRd1_reg[13]/D
+EXE_RegRd1_reg[14]/CLR
+EXE_RegRd1_reg[14]/D
+EXE_RegRd1_reg[15]/CLR
+EXE_RegRd1_reg[15]/D
+EXE_RegRd1_reg[16]/CLR
+EXE_RegRd1_reg[16]/D
+EXE_RegRd1_reg[17]/CLR
+EXE_RegRd1_reg[17]/D
+EXE_RegRd1_reg[18]/CLR
+EXE_RegRd1_reg[18]/D
+EXE_RegRd1_reg[19]/CLR
+EXE_RegRd1_reg[19]/D
+EXE_RegRd1_reg[1]/CLR
+EXE_RegRd1_reg[1]/D
+EXE_RegRd1_reg[20]/CLR
+EXE_RegRd1_reg[20]/D
+EXE_RegRd1_reg[21]/CLR
+EXE_RegRd1_reg[21]/D
+EXE_RegRd1_reg[22]/CLR
+EXE_RegRd1_reg[22]/D
+EXE_RegRd1_reg[23]/CLR
+EXE_RegRd1_reg[23]/D
+EXE_RegRd1_reg[24]/CLR
+EXE_RegRd1_reg[24]/D
+EXE_RegRd1_reg[25]/CLR
+EXE_RegRd1_reg[25]/D
+EXE_RegRd1_reg[26]/CLR
+EXE_RegRd1_reg[26]/D
+EXE_RegRd1_reg[27]/CLR
+EXE_RegRd1_reg[27]/D
+EXE_RegRd1_reg[28]/CLR
+EXE_RegRd1_reg[28]/D
+EXE_RegRd1_reg[29]/CLR
+EXE_RegRd1_reg[29]/D
+EXE_RegRd1_reg[2]/CLR
+EXE_RegRd1_reg[2]/D
+EXE_RegRd1_reg[30]/CLR
+EXE_RegRd1_reg[30]/D
+EXE_RegRd1_reg[31]/CLR
+EXE_RegRd1_reg[31]/D
+EXE_RegRd1_reg[3]/CLR
+EXE_RegRd1_reg[3]/D
+EXE_RegRd1_reg[4]/CLR
+EXE_RegRd1_reg[4]/D
+EXE_RegRd1_reg[5]/CLR
+EXE_RegRd1_reg[5]/D
+EXE_RegRd1_reg[6]/CLR
+EXE_RegRd1_reg[6]/D
+EXE_RegRd1_reg[7]/CLR
+EXE_RegRd1_reg[7]/D
+EXE_RegRd1_reg[8]/CLR
+EXE_RegRd1_reg[8]/D
+EXE_RegRd1_reg[9]/CLR
+EXE_RegRd1_reg[9]/D
+EXE_RegRd2_reg[0]/CLR
+EXE_RegRd2_reg[0]/D
+EXE_RegRd2_reg[10]/CLR
+EXE_RegRd2_reg[10]/D
+EXE_RegRd2_reg[11]/CLR
+EXE_RegRd2_reg[11]/D
+EXE_RegRd2_reg[12]/CLR
+EXE_RegRd2_reg[12]/D
+EXE_RegRd2_reg[13]/CLR
+EXE_RegRd2_reg[13]/D
+EXE_RegRd2_reg[14]/CLR
+EXE_RegRd2_reg[14]/D
+EXE_RegRd2_reg[15]/CLR
+EXE_RegRd2_reg[15]/D
+EXE_RegRd2_reg[16]/CLR
+EXE_RegRd2_reg[16]/D
+EXE_RegRd2_reg[17]/CLR
+EXE_RegRd2_reg[17]/D
+EXE_RegRd2_reg[18]/CLR
+EXE_RegRd2_reg[18]/D
+EXE_RegRd2_reg[19]/CLR
+EXE_RegRd2_reg[19]/D
+EXE_RegRd2_reg[1]/CLR
+EXE_RegRd2_reg[1]/D
+EXE_RegRd2_reg[20]/CLR
+EXE_RegRd2_reg[20]/D
+EXE_RegRd2_reg[21]/CLR
+EXE_RegRd2_reg[21]/D
+EXE_RegRd2_reg[22]/CLR
+EXE_RegRd2_reg[22]/D
+EXE_RegRd2_reg[23]/CLR
+EXE_RegRd2_reg[23]/D
+EXE_RegRd2_reg[24]/CLR
+EXE_RegRd2_reg[24]/D
+EXE_RegRd2_reg[25]/CLR
+EXE_RegRd2_reg[25]/D
+EXE_RegRd2_reg[26]/CLR
+EXE_RegRd2_reg[26]/D
+EXE_RegRd2_reg[27]/CLR
+EXE_RegRd2_reg[27]/D
+EXE_RegRd2_reg[28]/CLR
+EXE_RegRd2_reg[28]/D
+EXE_RegRd2_reg[29]/CLR
+EXE_RegRd2_reg[29]/D
+EXE_RegRd2_reg[2]/CLR
+EXE_RegRd2_reg[2]/D
+EXE_RegRd2_reg[30]/CLR
+EXE_RegRd2_reg[30]/D
+EXE_RegRd2_reg[31]/CLR
+EXE_RegRd2_reg[31]/D
+EXE_RegRd2_reg[3]/CLR
+EXE_RegRd2_reg[3]/D
+EXE_RegRd2_reg[4]/CLR
+EXE_RegRd2_reg[4]/D
+EXE_RegRd2_reg[5]/CLR
+EXE_RegRd2_reg[5]/D
+EXE_RegRd2_reg[6]/CLR
+EXE_RegRd2_reg[6]/D
+EXE_RegRd2_reg[7]/CLR
+EXE_RegRd2_reg[7]/D
+EXE_RegRd2_reg[8]/CLR
+EXE_RegRd2_reg[8]/D
+EXE_RegRd2_reg[9]/CLR
+EXE_RegRd2_reg[9]/D
+EXE_RegWrite_reg/CLR
+EXE_RegWrite_reg/D
+EXE_Rt_reg[0]/CLR
+EXE_Rt_reg[0]/D
+EXE_Rt_reg[1]/CLR
+EXE_Rt_reg[1]/D
+EXE_Rt_reg[2]/CLR
+EXE_Rt_reg[2]/D
+EXE_Rt_reg[3]/CLR
+EXE_Rt_reg[3]/D
+EXE_Rt_reg[4]/CLR
+EXE_Rt_reg[4]/D
+EXE_SignExt_reg[0]/CLR
+EXE_SignExt_reg[0]/D
+EXE_SignExt_reg[10]/CLR
+EXE_SignExt_reg[10]/D
+EXE_SignExt_reg[11]/CLR
+EXE_SignExt_reg[11]/D
+EXE_SignExt_reg[12]/CLR
+EXE_SignExt_reg[12]/D
+EXE_SignExt_reg[13]/CLR
+EXE_SignExt_reg[13]/D
+EXE_SignExt_reg[14]/CLR
+EXE_SignExt_reg[14]/D
+EXE_SignExt_reg[1]/CLR
+EXE_SignExt_reg[1]/D
+EXE_SignExt_reg[29]/CLR
+EXE_SignExt_reg[29]/D
+EXE_SignExt_reg[2]/CLR
+EXE_SignExt_reg[2]/D
+EXE_SignExt_reg[3]/CLR
+EXE_SignExt_reg[3]/D
+EXE_SignExt_reg[4]/CLR
+EXE_SignExt_reg[4]/D
+EXE_SignExt_reg[5]/CLR
+EXE_SignExt_reg[5]/D
+EXE_SignExt_reg[6]/CLR
+EXE_SignExt_reg[6]/D
+EXE_SignExt_reg[7]/CLR
+EXE_SignExt_reg[7]/D
+EXE_SignExt_reg[8]/CLR
+EXE_SignExt_reg[8]/D
+EXE_SignExt_reg[9]/CLR
+EXE_SignExt_reg[9]/D
+ID_Instruction_reg[0]/CLR
+ID_Instruction_reg[0]/D
+ID_Instruction_reg[10]/CLR
+ID_Instruction_reg[10]/D
+ID_Instruction_reg[11]/CLR
+ID_Instruction_reg[11]/D
+ID_Instruction_reg[12]/CLR
+ID_Instruction_reg[12]/D
+ID_Instruction_reg[13]/CLR
+ID_Instruction_reg[13]/D
+ID_Instruction_reg[14]/CLR
+ID_Instruction_reg[14]/D
+ID_Instruction_reg[15]/CLR
+ID_Instruction_reg[15]/D
+ID_Instruction_reg[16]/CLR
+ID_Instruction_reg[16]/D
+ID_Instruction_reg[17]/CLR
+ID_Instruction_reg[17]/D
+ID_Instruction_reg[18]/CLR
+ID_Instruction_reg[18]/D
+ID_Instruction_reg[19]/CLR
+ID_Instruction_reg[19]/D
+ID_Instruction_reg[1]/CLR
+ID_Instruction_reg[1]/D
+ID_Instruction_reg[20]/CLR
+ID_Instruction_reg[20]/D
+ID_Instruction_reg[21]/CLR
+ID_Instruction_reg[21]/D
+ID_Instruction_reg[22]/CLR
+ID_Instruction_reg[22]/D
+ID_Instruction_reg[23]/CLR
+ID_Instruction_reg[23]/D
+ID_Instruction_reg[24]/CLR
+ID_Instruction_reg[24]/D
+ID_Instruction_reg[25]/CLR
+ID_Instruction_reg[25]/D
+ID_Instruction_reg[26]/CLR
+ID_Instruction_reg[26]/D
+ID_Instruction_reg[27]/CLR
+ID_Instruction_reg[27]/D
+ID_Instruction_reg[28]/CLR
+ID_Instruction_reg[28]/D
+ID_Instruction_reg[29]/CLR
+ID_Instruction_reg[29]/D
+ID_Instruction_reg[2]/CLR
+ID_Instruction_reg[2]/D
+ID_Instruction_reg[30]/CLR
+ID_Instruction_reg[30]/D
+ID_Instruction_reg[31]/CLR
+ID_Instruction_reg[31]/D
+ID_Instruction_reg[3]/CLR
+ID_Instruction_reg[3]/D
+ID_Instruction_reg[4]/CLR
+ID_Instruction_reg[4]/D
+ID_Instruction_reg[5]/CLR
+ID_Instruction_reg[5]/D
+ID_Instruction_reg[6]/CLR
+ID_Instruction_reg[6]/D
+ID_Instruction_reg[7]/CLR
+ID_Instruction_reg[7]/D
+ID_Instruction_reg[8]/CLR
+ID_Instruction_reg[8]/D
+ID_Instruction_reg[9]/CLR
+ID_Instruction_reg[9]/D
+ID_PcNext_reg[10]/CLR
+ID_PcNext_reg[10]/D
+ID_PcNext_reg[11]/CLR
+ID_PcNext_reg[11]/D
+ID_PcNext_reg[12]/CLR
+ID_PcNext_reg[12]/D
+ID_PcNext_reg[13]/CLR
+ID_PcNext_reg[13]/D
+ID_PcNext_reg[14]/CLR
+ID_PcNext_reg[14]/D
+ID_PcNext_reg[15]/CLR
+ID_PcNext_reg[15]/D
+ID_PcNext_reg[16]/CLR
+ID_PcNext_reg[16]/D
+ID_PcNext_reg[17]/CLR
+ID_PcNext_reg[17]/D
+ID_PcNext_reg[18]/CLR
+ID_PcNext_reg[18]/D
+ID_PcNext_reg[19]/CLR
+ID_PcNext_reg[19]/D
+ID_PcNext_reg[1]/CLR
+ID_PcNext_reg[1]/D
+ID_PcNext_reg[20]/CLR
+ID_PcNext_reg[20]/D
+ID_PcNext_reg[21]/CLR
+ID_PcNext_reg[21]/D
+ID_PcNext_reg[22]/CLR
+ID_PcNext_reg[22]/D
+ID_PcNext_reg[23]/CLR
+ID_PcNext_reg[23]/D
+ID_PcNext_reg[24]/CLR
+ID_PcNext_reg[24]/D
+ID_PcNext_reg[25]/CLR
+ID_PcNext_reg[25]/D
+ID_PcNext_reg[26]/CLR
+ID_PcNext_reg[26]/D
+ID_PcNext_reg[27]/CLR
+ID_PcNext_reg[27]/D
+ID_PcNext_reg[28]/CLR
+ID_PcNext_reg[28]/D
+ID_PcNext_reg[29]/CLR
+ID_PcNext_reg[29]/D
+ID_PcNext_reg[2]/CLR
+ID_PcNext_reg[2]/D
+ID_PcNext_reg[30]/CLR
+ID_PcNext_reg[30]/D
+ID_PcNext_reg[31]/CLR
+ID_PcNext_reg[31]/D
+ID_PcNext_reg[3]/CLR
+ID_PcNext_reg[3]/D
+ID_PcNext_reg[4]/CLR
+ID_PcNext_reg[4]/D
+ID_PcNext_reg[5]/CLR
+ID_PcNext_reg[5]/D
+ID_PcNext_reg[6]/CLR
+ID_PcNext_reg[6]/D
+ID_PcNext_reg[7]/CLR
+ID_PcNext_reg[7]/D
+ID_PcNext_reg[8]/CLR
+ID_PcNext_reg[8]/D
+ID_PcNext_reg[9]/CLR
+ID_PcNext_reg[9]/D
+IF_PcOut_reg[10]/CLR
+IF_PcOut_reg[10]/D
+IF_PcOut_reg[11]/CLR
+IF_PcOut_reg[11]/D
+IF_PcOut_reg[12]/CLR
+IF_PcOut_reg[12]/D
+IF_PcOut_reg[13]/CLR
+IF_PcOut_reg[13]/D
+IF_PcOut_reg[14]/CLR
+IF_PcOut_reg[14]/D
+IF_PcOut_reg[15]/CLR
+IF_PcOut_reg[15]/D
+IF_PcOut_reg[16]/CLR
+IF_PcOut_reg[16]/D
+IF_PcOut_reg[17]/CLR
+IF_PcOut_reg[17]/D
+IF_PcOut_reg[18]/CLR
+IF_PcOut_reg[18]/D
+IF_PcOut_reg[19]/CLR
+IF_PcOut_reg[19]/D
+IF_PcOut_reg[1]/CLR
+IF_PcOut_reg[1]/D
+IF_PcOut_reg[20]/CLR
+IF_PcOut_reg[20]/D
+IF_PcOut_reg[21]/CLR
+IF_PcOut_reg[21]/D
+IF_PcOut_reg[22]/CLR
+IF_PcOut_reg[22]/D
+IF_PcOut_reg[23]/CLR
+IF_PcOut_reg[23]/D
+IF_PcOut_reg[24]/CLR
+IF_PcOut_reg[24]/D
+IF_PcOut_reg[25]/CLR
+IF_PcOut_reg[25]/D
+IF_PcOut_reg[26]/CLR
+IF_PcOut_reg[26]/D
+IF_PcOut_reg[27]/CLR
+IF_PcOut_reg[27]/D
+IF_PcOut_reg[28]/CLR
+IF_PcOut_reg[28]/D
+IF_PcOut_reg[29]/CLR
+IF_PcOut_reg[29]/D
+IF_PcOut_reg[2]/CLR
+IF_PcOut_reg[2]/D
+IF_PcOut_reg[30]/CLR
+IF_PcOut_reg[30]/D
+IF_PcOut_reg[31]/CLR
+IF_PcOut_reg[31]/D
+IF_PcOut_reg[3]/CLR
+IF_PcOut_reg[3]/D
+IF_PcOut_reg[4]/CLR
+IF_PcOut_reg[4]/D
+IF_PcOut_reg[5]/CLR
+IF_PcOut_reg[5]/D
+IF_PcOut_reg[6]/CLR
+IF_PcOut_reg[6]/D
+IF_PcOut_reg[7]/CLR
+IF_PcOut_reg[7]/D
+IF_PcOut_reg[8]/CLR
+IF_PcOut_reg[8]/D
+IF_PcOut_reg[9]/CLR
+IF_PcOut_reg[9]/D
+MEM_AluResult_reg[0]/CLR
+MEM_AluResult_reg[0]/D
+MEM_AluResult_reg[10]/CLR
+MEM_AluResult_reg[10]/D
+MEM_AluResult_reg[11]/CLR
+MEM_AluResult_reg[11]/D
+MEM_AluResult_reg[12]/CLR
+MEM_AluResult_reg[12]/D
+MEM_AluResult_reg[13]/CLR
+MEM_AluResult_reg[13]/D
+MEM_AluResult_reg[14]/CLR
+MEM_AluResult_reg[14]/D
+MEM_AluResult_reg[15]/CLR
+MEM_AluResult_reg[15]/D
+MEM_AluResult_reg[16]/CLR
+MEM_AluResult_reg[16]/D
+MEM_AluResult_reg[17]/CLR
+MEM_AluResult_reg[17]/D
+MEM_AluResult_reg[18]/CLR
+MEM_AluResult_reg[18]/D
+MEM_AluResult_reg[19]/CLR
+MEM_AluResult_reg[19]/D
+MEM_AluResult_reg[1]/CLR
+MEM_AluResult_reg[1]/D
+MEM_AluResult_reg[20]/CLR
+MEM_AluResult_reg[20]/D
+MEM_AluResult_reg[21]/CLR
+MEM_AluResult_reg[21]/D
+MEM_AluResult_reg[22]/CLR
+MEM_AluResult_reg[22]/D
+MEM_AluResult_reg[23]/CLR
+MEM_AluResult_reg[23]/D
+MEM_AluResult_reg[24]/CLR
+MEM_AluResult_reg[24]/D
+MEM_AluResult_reg[25]/CLR
+MEM_AluResult_reg[25]/D
+MEM_AluResult_reg[26]/CLR
+MEM_AluResult_reg[26]/D
+MEM_AluResult_reg[27]/CLR
+MEM_AluResult_reg[27]/D
+MEM_AluResult_reg[28]/CLR
+MEM_AluResult_reg[28]/D
+MEM_AluResult_reg[29]/CLR
+MEM_AluResult_reg[29]/D
+MEM_AluResult_reg[2]/CLR
+MEM_AluResult_reg[2]/D
+MEM_AluResult_reg[30]/CLR
+MEM_AluResult_reg[30]/D
+MEM_AluResult_reg[31]/CLR
+MEM_AluResult_reg[31]/D
+MEM_AluResult_reg[3]/CLR
+MEM_AluResult_reg[3]/D
+MEM_AluResult_reg[4]/CLR
+MEM_AluResult_reg[4]/D
+MEM_AluResult_reg[5]/CLR
+MEM_AluResult_reg[5]/D
+MEM_AluResult_reg[6]/CLR
+MEM_AluResult_reg[6]/D
+MEM_AluResult_reg[7]/CLR
+MEM_AluResult_reg[7]/D
+MEM_AluResult_reg[8]/CLR
+MEM_AluResult_reg[8]/D
+MEM_AluResult_reg[9]/CLR
+MEM_AluResult_reg[9]/D
+MEM_BranchAddress_reg[10]/CLR
+MEM_BranchAddress_reg[10]/D
+MEM_BranchAddress_reg[11]/CLR
+MEM_BranchAddress_reg[11]/D
+MEM_BranchAddress_reg[12]/CLR
+MEM_BranchAddress_reg[12]/D
+MEM_BranchAddress_reg[13]/CLR
+MEM_BranchAddress_reg[13]/D
+MEM_BranchAddress_reg[14]/CLR
+MEM_BranchAddress_reg[14]/D
+MEM_BranchAddress_reg[15]/CLR
+MEM_BranchAddress_reg[15]/D
+MEM_BranchAddress_reg[16]/CLR
+MEM_BranchAddress_reg[16]/D
+MEM_BranchAddress_reg[17]/CLR
+MEM_BranchAddress_reg[17]/D
+MEM_BranchAddress_reg[18]/CLR
+MEM_BranchAddress_reg[18]/D
+MEM_BranchAddress_reg[19]/CLR
+MEM_BranchAddress_reg[19]/D
+MEM_BranchAddress_reg[1]/CLR
+MEM_BranchAddress_reg[1]/D
+MEM_BranchAddress_reg[20]/CLR
+MEM_BranchAddress_reg[20]/D
+MEM_BranchAddress_reg[21]/CLR
+MEM_BranchAddress_reg[21]/D
+MEM_BranchAddress_reg[22]/CLR
+MEM_BranchAddress_reg[22]/D
+MEM_BranchAddress_reg[23]/CLR
+MEM_BranchAddress_reg[23]/D
+MEM_BranchAddress_reg[24]/CLR
+MEM_BranchAddress_reg[24]/D
+MEM_BranchAddress_reg[25]/CLR
+MEM_BranchAddress_reg[25]/D
+MEM_BranchAddress_reg[26]/CLR
+MEM_BranchAddress_reg[26]/D
+MEM_BranchAddress_reg[27]/CLR
+MEM_BranchAddress_reg[27]/D
+MEM_BranchAddress_reg[28]/CLR
+MEM_BranchAddress_reg[28]/D
+MEM_BranchAddress_reg[29]/CLR
+MEM_BranchAddress_reg[29]/D
+MEM_BranchAddress_reg[2]/CLR
+MEM_BranchAddress_reg[2]/D
+MEM_BranchAddress_reg[30]/CLR
+MEM_BranchAddress_reg[30]/D
+MEM_BranchAddress_reg[31]/CLR
+MEM_BranchAddress_reg[31]/D
+MEM_BranchAddress_reg[3]/CLR
+MEM_BranchAddress_reg[3]/D
+MEM_BranchAddress_reg[4]/CLR
+MEM_BranchAddress_reg[4]/D
+MEM_BranchAddress_reg[5]/CLR
+MEM_BranchAddress_reg[5]/D
+MEM_BranchAddress_reg[6]/CLR
+MEM_BranchAddress_reg[6]/D
+MEM_BranchAddress_reg[7]/CLR
+MEM_BranchAddress_reg[7]/D
+MEM_BranchAddress_reg[8]/CLR
+MEM_BranchAddress_reg[8]/D
+MEM_BranchAddress_reg[9]/CLR
+MEM_BranchAddress_reg[9]/D
+MEM_Branch_reg/CLR
+MEM_Branch_reg/D
+MEM_MemRead_reg/CLR
+MEM_MemRead_reg/D
+MEM_MemWrite_reg/CLR
+MEM_MemWrite_reg/D
+MEM_RegDest_reg[0]/CLR
+MEM_RegDest_reg[0]/D
+MEM_RegDest_reg[1]/CLR
+MEM_RegDest_reg[1]/D
+MEM_RegDest_reg[2]/CLR
+MEM_RegDest_reg[2]/D
+MEM_RegDest_reg[3]/CLR
+MEM_RegDest_reg[3]/D
+MEM_RegDest_reg[4]/CLR
+MEM_RegDest_reg[4]/D
+MEM_RegRd2_reg[0]/CLR
+MEM_RegRd2_reg[0]/D
+MEM_RegRd2_reg[10]/CLR
+MEM_RegRd2_reg[10]/D
+MEM_RegRd2_reg[11]/CLR
+MEM_RegRd2_reg[11]/D
+MEM_RegRd2_reg[12]/CLR
+MEM_RegRd2_reg[12]/D
+MEM_RegRd2_reg[13]/CLR
+MEM_RegRd2_reg[13]/D
+MEM_RegRd2_reg[14]/CLR
+MEM_RegRd2_reg[14]/D
+MEM_RegRd2_reg[15]/CLR
+MEM_RegRd2_reg[15]/D
+MEM_RegRd2_reg[16]/CLR
+MEM_RegRd2_reg[16]/D
+MEM_RegRd2_reg[17]/CLR
+MEM_RegRd2_reg[17]/D
+MEM_RegRd2_reg[18]/CLR
+MEM_RegRd2_reg[18]/D
+MEM_RegRd2_reg[19]/CLR
+MEM_RegRd2_reg[19]/D
+MEM_RegRd2_reg[1]/CLR
+MEM_RegRd2_reg[1]/D
+MEM_RegRd2_reg[20]/CLR
+MEM_RegRd2_reg[20]/D
+MEM_RegRd2_reg[21]/CLR
+MEM_RegRd2_reg[21]/D
+MEM_RegRd2_reg[22]/CLR
+MEM_RegRd2_reg[22]/D
+MEM_RegRd2_reg[23]/CLR
+MEM_RegRd2_reg[23]/D
+MEM_RegRd2_reg[24]/CLR
+MEM_RegRd2_reg[24]/D
+MEM_RegRd2_reg[25]/CLR
+MEM_RegRd2_reg[25]/D
+MEM_RegRd2_reg[26]/CLR
+MEM_RegRd2_reg[26]/D
+MEM_RegRd2_reg[27]/CLR
+MEM_RegRd2_reg[27]/D
+MEM_RegRd2_reg[28]/CLR
+MEM_RegRd2_reg[28]/D
+MEM_RegRd2_reg[29]/CLR
+MEM_RegRd2_reg[29]/D
+MEM_RegRd2_reg[2]/CLR
+MEM_RegRd2_reg[2]/D
+MEM_RegRd2_reg[30]/CLR
+MEM_RegRd2_reg[30]/D
+MEM_RegRd2_reg[31]/CLR
+MEM_RegRd2_reg[31]/D
+MEM_RegRd2_reg[3]/CLR
+MEM_RegRd2_reg[3]/D
+MEM_RegRd2_reg[4]/CLR
+MEM_RegRd2_reg[4]/D
+MEM_RegRd2_reg[5]/CLR
+MEM_RegRd2_reg[5]/D
+MEM_RegRd2_reg[6]/CLR
+MEM_RegRd2_reg[6]/D
+MEM_RegRd2_reg[7]/CLR
+MEM_RegRd2_reg[7]/D
+MEM_RegRd2_reg[8]/CLR
+MEM_RegRd2_reg[8]/D
+MEM_RegRd2_reg[9]/CLR
+MEM_RegRd2_reg[9]/D
+MEM_RegWrite_reg/CLR
+MEM_RegWrite_reg/D
+MEM_Zero_reg/CLR
+MEM_Zero_reg/D
+WB_Address_reg[0]/CLR
+WB_Address_reg[0]/D
+WB_Address_reg[10]/CLR
+WB_Address_reg[10]/D
+WB_Address_reg[11]/CLR
+WB_Address_reg[11]/D
+WB_Address_reg[12]/CLR
+WB_Address_reg[12]/D
+WB_Address_reg[13]/CLR
+WB_Address_reg[13]/D
+WB_Address_reg[14]/CLR
+WB_Address_reg[14]/D
+WB_Address_reg[15]/CLR
+WB_Address_reg[15]/D
+WB_Address_reg[16]/CLR
+WB_Address_reg[16]/D
+WB_Address_reg[17]/CLR
+WB_Address_reg[17]/D
+WB_Address_reg[18]/CLR
+WB_Address_reg[18]/D
+WB_Address_reg[19]/CLR
+WB_Address_reg[19]/D
+WB_Address_reg[1]/CLR
+WB_Address_reg[1]/D
+WB_Address_reg[20]/CLR
+WB_Address_reg[20]/D
+WB_Address_reg[21]/CLR
+WB_Address_reg[21]/D
+WB_Address_reg[22]/CLR
+WB_Address_reg[22]/D
+WB_Address_reg[23]/CLR
+WB_Address_reg[23]/D
+WB_Address_reg[24]/CLR
+WB_Address_reg[24]/D
+WB_Address_reg[25]/CLR
+WB_Address_reg[25]/D
+WB_Address_reg[26]/CLR
+WB_Address_reg[26]/D
+WB_Address_reg[27]/CLR
+WB_Address_reg[27]/D
+WB_Address_reg[28]/CLR
+WB_Address_reg[28]/D
+WB_Address_reg[29]/CLR
+WB_Address_reg[29]/D
+WB_Address_reg[2]/CLR
+WB_Address_reg[2]/D
+WB_Address_reg[30]/CLR
+WB_Address_reg[30]/D
+WB_Address_reg[31]/CLR
+WB_Address_reg[31]/D
+WB_Address_reg[3]/CLR
+WB_Address_reg[3]/D
+WB_Address_reg[4]/CLR
+WB_Address_reg[4]/D
+WB_Address_reg[5]/CLR
+WB_Address_reg[5]/D
+WB_Address_reg[6]/CLR
+WB_Address_reg[6]/D
+WB_Address_reg[7]/CLR
+WB_Address_reg[7]/D
+WB_Address_reg[8]/CLR
+WB_Address_reg[8]/D
+WB_Address_reg[9]/CLR
+WB_Address_reg[9]/D
+WB_MemToReg_reg/CLR
+WB_MemToReg_reg/D
+WB_ReadData_reg[0]/CLR
+WB_ReadData_reg[0]/D
+WB_ReadData_reg[10]/CLR
+WB_ReadData_reg[10]/D
+WB_ReadData_reg[11]/CLR
+WB_ReadData_reg[11]/D
+WB_ReadData_reg[12]/CLR
+WB_ReadData_reg[12]/D
+WB_ReadData_reg[13]/CLR
+WB_ReadData_reg[13]/D
+WB_ReadData_reg[14]/CLR
+WB_ReadData_reg[14]/D
+WB_ReadData_reg[15]/CLR
+WB_ReadData_reg[15]/D
+WB_ReadData_reg[16]/CLR
+WB_ReadData_reg[16]/D
+WB_ReadData_reg[17]/CLR
+WB_ReadData_reg[17]/D
+WB_ReadData_reg[18]/CLR
+WB_ReadData_reg[18]/D
+WB_ReadData_reg[19]/CLR
+WB_ReadData_reg[19]/D
+WB_ReadData_reg[1]/CLR
+WB_ReadData_reg[1]/D
+WB_ReadData_reg[20]/CLR
+WB_ReadData_reg[20]/D
+WB_ReadData_reg[21]/CLR
+WB_ReadData_reg[21]/D
+WB_ReadData_reg[22]/CLR
+WB_ReadData_reg[22]/D
+WB_ReadData_reg[23]/CLR
+WB_ReadData_reg[23]/D
+WB_ReadData_reg[24]/CLR
+WB_ReadData_reg[24]/D
+WB_ReadData_reg[25]/CLR
+WB_ReadData_reg[25]/D
+WB_ReadData_reg[26]/CLR
+WB_ReadData_reg[26]/D
+WB_ReadData_reg[27]/CLR
+WB_ReadData_reg[27]/D
+WB_ReadData_reg[28]/CLR
+WB_ReadData_reg[28]/D
+WB_ReadData_reg[29]/CLR
+WB_ReadData_reg[29]/D
+WB_ReadData_reg[2]/CLR
+WB_ReadData_reg[2]/D
+WB_ReadData_reg[30]/CLR
+WB_ReadData_reg[30]/D
+WB_ReadData_reg[31]/CLR
+WB_ReadData_reg[31]/D
+WB_ReadData_reg[3]/CLR
+WB_ReadData_reg[3]/D
+WB_ReadData_reg[4]/CLR
+WB_ReadData_reg[4]/D
+WB_ReadData_reg[5]/CLR
+WB_ReadData_reg[5]/D
+WB_ReadData_reg[6]/CLR
+WB_ReadData_reg[6]/D
+WB_ReadData_reg[7]/CLR
+WB_ReadData_reg[7]/D
+WB_ReadData_reg[8]/CLR
+WB_ReadData_reg[8]/D
+WB_ReadData_reg[9]/CLR
+WB_ReadData_reg[9]/D
+WB_RegDest_reg[0]/CLR
+WB_RegDest_reg[0]/D
+WB_RegDest_reg[1]/CLR
+WB_RegDest_reg[1]/D
+WB_RegDest_reg[2]/CLR
+WB_RegDest_reg[2]/D
+WB_RegDest_reg[3]/CLR
+WB_RegDest_reg[3]/D
+WB_RegDest_reg[4]/CLR
+WB_RegDest_reg[4]/D
+WB_RegWrite_reg/CLR
+WB_RegWrite_reg/D
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 66 input ports with no input delay specified. (HIGH)
+
+Clk
+D_DataIn[0]
+D_DataIn[10]
+D_DataIn[11]
+D_DataIn[12]
+D_DataIn[13]
+D_DataIn[14]
+D_DataIn[15]
+D_DataIn[16]
+D_DataIn[17]
+D_DataIn[18]
+D_DataIn[19]
+D_DataIn[1]
+D_DataIn[20]
+D_DataIn[21]
+D_DataIn[22]
+D_DataIn[23]
+D_DataIn[24]
+D_DataIn[25]
+D_DataIn[26]
+D_DataIn[27]
+D_DataIn[28]
+D_DataIn[29]
+D_DataIn[2]
+D_DataIn[30]
+D_DataIn[31]
+D_DataIn[3]
+D_DataIn[4]
+D_DataIn[5]
+D_DataIn[6]
+D_DataIn[7]
+D_DataIn[8]
+D_DataIn[9]
+I_DataIn[0]
+I_DataIn[10]
+I_DataIn[11]
+I_DataIn[12]
+I_DataIn[13]
+I_DataIn[14]
+I_DataIn[15]
+I_DataIn[16]
+I_DataIn[17]
+I_DataIn[18]
+I_DataIn[19]
+I_DataIn[1]
+I_DataIn[20]
+I_DataIn[21]
+I_DataIn[22]
+I_DataIn[23]
+I_DataIn[24]
+I_DataIn[25]
+I_DataIn[26]
+I_DataIn[27]
+I_DataIn[28]
+I_DataIn[29]
+I_DataIn[2]
+I_DataIn[30]
+I_DataIn[31]
+I_DataIn[3]
+I_DataIn[4]
+I_DataIn[5]
+I_DataIn[6]
+I_DataIn[7]
+I_DataIn[8]
+I_DataIn[9]
+Reset
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 97 ports with no output delay specified. (HIGH)
+
+D_Addr[0]
+D_Addr[10]
+D_Addr[11]
+D_Addr[12]
+D_Addr[13]
+D_Addr[14]
+D_Addr[15]
+D_Addr[16]
+D_Addr[17]
+D_Addr[18]
+D_Addr[19]
+D_Addr[1]
+D_Addr[20]
+D_Addr[21]
+D_Addr[22]
+D_Addr[23]
+D_Addr[24]
+D_Addr[25]
+D_Addr[26]
+D_Addr[27]
+D_Addr[28]
+D_Addr[29]
+D_Addr[2]
+D_Addr[30]
+D_Addr[31]
+D_Addr[3]
+D_Addr[4]
+D_Addr[5]
+D_Addr[6]
+D_Addr[7]
+D_Addr[8]
+D_Addr[9]
+D_DataOut[0]
+D_DataOut[10]
+D_DataOut[11]
+D_DataOut[12]
+D_DataOut[13]
+D_DataOut[14]
+D_DataOut[15]
+D_DataOut[16]
+D_DataOut[17]
+D_DataOut[18]
+D_DataOut[19]
+D_DataOut[1]
+D_DataOut[20]
+D_DataOut[21]
+D_DataOut[22]
+D_DataOut[23]
+D_DataOut[24]
+D_DataOut[25]
+D_DataOut[26]
+D_DataOut[27]
+D_DataOut[28]
+D_DataOut[29]
+D_DataOut[2]
+D_DataOut[30]
+D_DataOut[31]
+D_DataOut[3]
+D_DataOut[4]
+D_DataOut[5]
+D_DataOut[6]
+D_DataOut[7]
+D_DataOut[8]
+D_DataOut[9]
+D_RdStb
+D_WrStb
+I_Addr[10]
+I_Addr[11]
+I_Addr[12]
+I_Addr[13]
+I_Addr[14]
+I_Addr[15]
+I_Addr[16]
+I_Addr[17]
+I_Addr[18]
+I_Addr[19]
+I_Addr[1]
+I_Addr[20]
+I_Addr[21]
+I_Addr[22]
+I_Addr[23]
+I_Addr[24]
+I_Addr[25]
+I_Addr[26]
+I_Addr[27]
+I_Addr[28]
+I_Addr[29]
+I_Addr[2]
+I_Addr[30]
+I_Addr[31]
+I_Addr[3]
+I_Addr[4]
+I_Addr[5]
+I_Addr[6]
+I_Addr[7]
+I_Addr[8]
+I_Addr[9]
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but has a clock definition.
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking unexpandable_clocks
+--------------------------------
+ There are 0 unexpandable clock pairs.
+
+
+13. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  883          inf        0.000                      0                  883           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           883 Endpoints
+Min Delay           883 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[0]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[0]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[0]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[0]
+                                                                      r  D_Addr_OBUF[0]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[0]
+                                                                      r  D_Addr[0]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[10]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[10]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[10]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[10]
+                                                                      r  D_Addr_OBUF[10]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[10]
+                                                                      r  D_Addr[10]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[11]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[11]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[11]
+                                                                      r  D_Addr_OBUF[11]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[11]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[11]
+                                                                      r  D_Addr[11]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[12]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[12]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[12]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[12]
+                                                                      r  D_Addr_OBUF[12]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[12]
+                                                                      r  D_Addr[12]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[13]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[13]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[13]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[13]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[13]
+                                                                      r  D_Addr_OBUF[13]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[13]
+                                                                      r  D_Addr[13]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[14]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[14]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[14]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[14]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[14]
+                                                                      r  D_Addr_OBUF[14]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[14]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[14]
+                                                                      r  D_Addr[14]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[15]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[15]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[15]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[15]
+                                                                      r  D_Addr_OBUF[15]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[15]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[15]
+                                                                      r  D_Addr[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[16]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[16]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[16]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[16]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[16]
+                                                                      r  D_Addr_OBUF[16]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[16]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[16]
+                                                                      r  D_Addr[16]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[17]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[17]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[17]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[17]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[17]
+                                                                      r  D_Addr_OBUF[17]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[17]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[17]
+                                                                      r  D_Addr[17]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 MEM_AluResult_reg[18]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            D_Addr[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        4.073ns  (logic 3.273ns (80.362%)  route 0.800ns (19.638%))
+  Logic Levels:           2  (FDCE=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         FDCE                         0.000     0.000 r  MEM_AluResult_reg[18]/C
+                         FDCE (Prop_fdce_C_Q)         0.518     0.518 r  MEM_AluResult_reg[18]/Q
+                         net (fo=2, unplaced)         0.800     1.318    D_Addr_OBUF[18]
+                                                                      r  D_Addr_OBUF[18]_inst/I
+                         OBUF (Prop_obuf_I_O)         2.755     4.073 r  D_Addr_OBUF[18]_inst/O
+                         net (fo=0)                   0.000     4.073    D_Addr[18]
+                                                                      r  D_Addr[18]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Regs/data1_rd[0]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[0]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[0]
+                         FDCE                                         r  EXE_RegRd1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[10]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[10]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[10]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[10]
+                         FDCE                                         r  EXE_RegRd1_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[11]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[11]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[11]
+                         FDCE                                         r  EXE_RegRd1_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[12]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[12]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[12]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[12]
+                         FDCE                                         r  EXE_RegRd1_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[13]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[13]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[13]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[13]
+                         FDCE                                         r  EXE_RegRd1_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[14]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[14]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[14]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[14]
+                         FDCE                                         r  EXE_RegRd1_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[15]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[15]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[15]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[15]
+                         FDCE                                         r  EXE_RegRd1_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[16]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[16]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[16]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[16]
+                         FDCE                                         r  EXE_RegRd1_reg[16]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[17]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[17]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[17]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[17]
+                         FDCE                                         r  EXE_RegRd1_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Regs/data1_rd[18]
+                            (internal pin)
+  Destination:            EXE_RegRd1_reg[18]/D
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.000ns  (logic 0.000ns (0.000%)  route 0.000ns (0.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         Registers                    0.000     0.000 r  Regs/data1_rd[18]
+                         net (fo=1, unplaced)         0.000     0.000    data1_rd[18]
+                         FDCE                                         r  EXE_RegRd1_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sources_1/imports/sources_1/new/Registers.vhd"
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sources_1/imports/sources_1/new/ALU.vhd"
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/ControlUnit.vhd"
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/memory.vhd"
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sources_1/imports/sources_1/imports/MaterialLab2/Multicycle_MIPS.vhd"
+vhdl xil_defaultlib  "../../../Arqui1Entrega.srcs/sim_1/imports/sim_1/imports/Material_Lab2/Multicycle_MIPS_tb.vhd"
